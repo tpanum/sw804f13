@@ -1,0 +1,90 @@
+%*******************************************************
+% Table of Contents
+%*******************************************************
+%\phantomsection
+\refstepcounter{dummy}
+\pdfbookmark[1]{\contentsname}{tableofcontents}
+\setcounter{tocdepth}{2} % <-- 2 includes up to subsections in the ToC
+\setcounter{secnumdepth}{3} % <-- 3 numbers up to subsubsections
+\manualmark
+\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+\tableofcontents
+\automark[section]{chapter}
+\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+%*******************************************************
+% List of Figures and of the Tables
+%*******************************************************
+\clearpage
+
+\begingroup
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+    \let\cleardoublepage\relax
+    % %*******************************************************
+    % % List of Figures
+    % %*******************************************************
+    % %\phantomsection
+    % \refstepcounter{dummy}
+    % %\addcontentsline{toc}{chapter}{\listfigurename}
+    % \pdfbookmark[1]{\listfigurename}{lof}
+    % \listoffigures
+
+    % \vspace*{8ex}
+
+    % %*******************************************************
+    % % List of Tables
+    % %*******************************************************
+    % %\phantomsection
+    % \refstepcounter{dummy}
+    % %\addcontentsline{toc}{chapter}{\listtablename}
+    % \pdfbookmark[1]{\listtablename}{lot}
+    % \listoftables
+
+    % \vspace*{8ex}
+%   \newpage
+
+   %  %*******************************************************
+   %  % List of Listings
+   %  %*******************************************************
+	  % %\phantomsection
+   %  \refstepcounter{dummy}
+   %  %\addcontentsline{toc}{chapter}{\lstlistlistingname}
+   %  \pdfbookmark[1]{\lstlistlistingname}{lol}
+   %  \lstlistoflistings
+
+   %  \vspace*{8ex}
+
+    %*******************************************************
+    % Acronyms
+    %*******************************************************
+    %\phantomsection
+    \refstepcounter{dummy}
+    \pdfbookmark[1]{Acronyms}{acronyms}
+    \markboth{\spacedlowsmallcaps{Acronyms}}{\spacedlowsmallcaps{Acronyms}}
+    \chapter*{Acronyms}
+    \begin{acronym}[UML]
+        \acro{DRY}{Don't Repeat Yourself}
+        \acro{API}{Application Programming Interface}
+        \acro{UML}{Unified Modeling Language}
+        \acro{GUI}{Graphical User Interface}
+        \acro{Video Frame}{A coded still image in video technology}
+        \acro{Frame Header}{Header containing metadata about a video frame such as resolution, and size}
+        \acro{Framerate}{The frequency with which a new video frame is displayed in a video. Is often measured in Frames per second.}
+        \acro{Rails}{Ruby on Rails}
+        \acro{LONE}{LONE is Observation of Nondeterministic Environments}
+        \acro{CRUD}{Create, Read, Update, and Delete}
+        \acro{FIFO}{First In, First Out}
+        \acro{AJAX}{Asynchronous JavaScript and XML}
+        \acro{RTMP}{Real Time Messaging Protocol}
+        \acro{CRTMP}{C++ RTMP Server}
+        \acro{paveparse}{GStreamer PaVE parser}
+        \acro{DoS}{Denial-of-service attack}
+        \acro{SHTRails}{Shared Handlebars Template for Rails}
+        \acro{VLC}{Video Lan Client}
+        \acro{RTP}{Real-time Transport Protocol}
+        \acro{MVC}{Model-View-Controller}
+    \end{acronym}
+\endgroup
+
+\cleardoublepage
