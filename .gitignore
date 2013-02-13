@@ -14,6 +14,7 @@
 *.ind
 *.ist
 *.lof
+*.lox
 *.log
 *.lot
 *.maf
@@ -30,3 +31,4 @@
 *.vrb
 *.xdy
 *.tdo
+master.pdf
