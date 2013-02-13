@@ -1,0 +1,19 @@
+TDC havde monopol indtil 1990, herefter begyndte Lytzen også at levere omstillingsløsninger
+
+IP Telefoni er det nye, her benyttes Cisco som leverandør
+
+
+
+APP krav spec:
+
+Skal kunne omstille til andre telefoner.
+
+
+Backend:
+
+- XMBP messages protocol - er interresant
+
+- Jtabi
+
+- DTMF toner
+
