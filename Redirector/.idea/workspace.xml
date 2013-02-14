@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f591c375-db0f-449c-a005-b541cbbbcf4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Android redirect/Redirector/src/dk/aau/cs/Redirector/RedirectorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Redirector.iml" afterPath="$PROJECT_DIR$/Redirector.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Redirector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,7 +95,7 @@
       <file leaf-file-name="RedirectorTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dk/aau/cs/Redirector/RedirectorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="1" selection-start="512" selection-end="512" vertical-scroll-proportion="0.7896175">
+            <state line="17" column="23" selection-start="512" selection-end="512" vertical-scroll-proportion="0.51699466">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,7 +221,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/robolectric-2.0-alpha-1-jar-with-dependencies.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/robolectric-2.0-alpha-1-jar-with-dependencies.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -457,7 +458,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6700855" order="-1" side_tool="false" content_ui="tabs" />
@@ -472,7 +473,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6700855" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6700855" order="-1" side_tool="false" content_ui="tabs" />
@@ -557,7 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dk/aau/cs/Redirector/RedirectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="1" selection-start="512" selection-end="512" vertical-scroll-proportion="0.7896175">
+        <state line="17" column="23" selection-start="512" selection-end="512" vertical-scroll-proportion="0.51699466">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
