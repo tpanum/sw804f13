@@ -9,9 +9,7 @@ To secure not committing unvalid code, a GitHook script was created, which perfo
 The following steps will guide you through how to setup a development environment on Mac OSX.
 
 1.	Do something
-
-2.	LOL
-
+2.	Copy `pre-commit` in `/hooks/iOS/pre-commit` into your local `/.git/hooks`
 3. 	Do something
 
 ### Windows ###
