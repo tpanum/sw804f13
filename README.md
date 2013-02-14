@@ -18,3 +18,5 @@ The following steps will guide you through how to setup a development environmen
 1. Import the project in IntelliJ, the Android SDK (http://developer.android.com/sdk/index.html) needs to be placed at: `C:/Android/sdk` for the testing to work.
 2. All testing is done with Robolectric which ports everything to the JVM. To test simply right click the test file and select "Run 'TheNameOfTheTest' with coverage".
 3. Do something
+
+X. If the IDE can't locate the android SDK even though it is specified, run the following command: android update project -p <your project directory>. The android bash command is found in the android SDK.
