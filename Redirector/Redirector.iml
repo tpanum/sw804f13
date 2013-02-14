@@ -76,11 +76,11 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/lib/robolectric-2.0-alpha-1-jar-with-dependencies.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/robolectric-2.0-alpha-1-jar-with-dependencies.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$APPLICATION_HOME_DIR$/lib/robolectric-2.0-alpha-1-jar-with-dependencies.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/robolectric-2.0-alpha-1-jar-with-dependencies.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
