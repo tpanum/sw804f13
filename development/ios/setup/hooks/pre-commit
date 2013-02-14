@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+num=`make -C /Users/bjarkehs/Documents/xcode/SampleApp/ test | grep 'Executed [0-9]* of [0-9]* tests, with [0-9]* failures' -m 1 | awk '{ print $7 }'`
+
+if [ $num != '0' ]; then
+	echo "Tests do not pass"
+	exit 1
+fi
+
