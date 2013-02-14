@@ -12,6 +12,8 @@ The following steps will guide you through how to setup a development environmen
 2.	Copy `pre-commit` in `/hooks/iOS/` into your local `/.git/hooks/`
 3. 	Do something
 
+* Write something about GHunit hacks (ie: see arbejdsblade)
+
 ### Windows ###
 1. Do something
 2. Do something
