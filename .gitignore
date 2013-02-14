@@ -65,10 +65,12 @@ local.properties
 proguard/
 
 # Intellij project files
-*.iml
-*.ipr
+#*.iml
+#*.ipr
 *.iws
-.idea/
+#.idea/
+.idea/workspace.xml
+.idea/tasks.xml
 
 #Robolectric test files
 *./tmp/cached-robolectric-classes.jar
