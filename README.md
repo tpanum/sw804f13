@@ -1,4 +1,7 @@
-sw804f13
+Installation for Development
 ========
-
-8th semester project
+Mac OS X
+--------
+* 1. Do something
+* 2. Do something
+* 3. Do something
