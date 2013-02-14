@@ -14,7 +14,7 @@ The following steps will guide you through how to setup a development environmen
 
 * Write something about GHunit hacks (ie: see arbejdsblade)
 
-### Windows ###
-1. Import the project in IntelliJ, the Android sdk (http://developer.android.com/sdk/index.html) needs to be placed at: `C:/Android/sdk` for the testing to work.
+### Android ###
+1. Import the project in IntelliJ, the Android SDK (http://developer.android.com/sdk/index.html) needs to be placed at: `C:/Android/sdk for the testing to work.
 2. All testing is done with Robolectric which ports everything to the JVM. To test simply right click the test file and select "Run 'TheNameOfTheTest' with coverage".
 3. Do something
