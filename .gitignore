@@ -68,9 +68,9 @@ proguard/
 #*.iml
 #*.ipr
 *.iws
-#.idea/
-.idea/workspace.xml
-.idea/tasks.xml
+Redirector/.idea/
+other/tests/AllTheShares/.idea/workspace.xml
+other/tests/AllTheShares/.idea/tasks.xml
 
 #######
 # iOS #
