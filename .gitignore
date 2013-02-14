@@ -36,6 +36,9 @@
 *.tdo
 master.pdf
 
+# OS X #
+########
+.DS_Store
 
 # ANDROID #
 ###########
