@@ -12,4 +12,8 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
     }
+
+    public static int add(int i, int j){
+        return i+j;
+    }
 }
