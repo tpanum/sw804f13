@@ -72,6 +72,9 @@ Redirector/.idea/
 other/tests/AllTheShares/.idea/workspace.xml
 other/tests/AllTheShares/.idea/tasks.xml
 
+#Robolectric test files
+*./tmp/cached-robolectric-classes.jar
+
 #######
 # iOS #
 #######
