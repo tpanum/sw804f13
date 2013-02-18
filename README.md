@@ -9,7 +9,7 @@ To secure not committing unvalid code, a GitHook script was created, which perfo
 The following steps will guide you through how to setup a development environment on Mac OSX.
 
 1.	Something somethig open project in Xcode
-2.	Copy `pre-commit` in `/hooks/iOS/` into your local `/.git/hooks/`
+2.	Copy `pre-commit` in `/development/ios/setup/hooks/` into your local `/.git/hooks/`
 3. 	Do something
 
 * Write something about GHunit hacks (ie: see arbejdsblade)
