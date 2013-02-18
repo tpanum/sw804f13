@@ -1,0 +1,25 @@
+Møde #2 d. 18-02-2013
+
+Authentication - Henrik levere
+
+User + password gonna be on the API server and Lytzen will make the rest down to the call manager.
+
+
+Architecture sketch is correct
+
+
+
+Presens / Jabber is the easiest way to get the call list and maybe redirect calls.
+
+Skype call with Christian about protocols and servers.
+
+
+Call manager is gonna get Rooted, so we can debug and see whats happening
+
+
+Lytzen står for gateway.
+
+
+Henrik mail: hej@lytzenit.dk
+
+Christian mail: ce@lytzenit.dk
