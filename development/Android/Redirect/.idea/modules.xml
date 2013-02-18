@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Redirector.iml" filepath="$PROJECT_DIR$/Redirector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Redirect.iml" filepath="$PROJECT_DIR$/Redirect.iml" />
     </modules>
   </component>
 </project>
