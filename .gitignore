@@ -65,15 +65,14 @@ local.properties
 proguard/
 
 # Intellij project files
-#*.iml
+*.iml
 #*.ipr
 *.iws
-Redirector/.idea/
-other/tests/AllTheShares/.idea/workspace.xml
-other/tests/AllTheShares/.idea/tasks.xml
+workspace.xml
+tasks.xml
 
 #Robolectric test files
-*./tmp/cached-robolectric-classes.jar
+cached-robolectric-classes.jar
 
 #######
 # iOS #
