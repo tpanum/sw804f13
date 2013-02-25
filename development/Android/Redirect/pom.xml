@@ -14,17 +14,34 @@
             <version>4.0.1.2</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.pivotallabs</groupId>
+            <artifactId>robolectric</artifactId>
+            <version>1.2</version>
+            <classifier>jar-with-dependencies</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+    
     <build>
         <finalName>${project.artifactId}</finalName>
+
         <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <!-- See http://code.google.com/p/maven-android-plugin/ -->
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
                     <version>3.5.0</version>
-
                     <extensions>true</extensions>
                 </plugin>
             </plugins>
@@ -35,10 +52,11 @@
                 <artifactId>android-maven-plugin</artifactId>
                 <configuration>
                     <sdk>
-                        <!-- platform or api level (api level 4 = platform 1.6)-->
-                        <platform>16</platform>
+                        <!-- platform or api level (api level 17 = platform 4.2)-->
+                        <platform>17</platform>
                     </sdk>
                 </configuration>
+                <extensions>true</extensions>
             </plugin>
         </plugins>
     </build>
