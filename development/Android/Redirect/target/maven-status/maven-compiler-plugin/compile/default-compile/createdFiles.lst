@@ -1,7 +1,8 @@
-dk\aau\cs\redirect\redirect.class
-dk\aau\cs\redirect\R$layout.class
 dk\aau\cs\redirect\R$attr.class
-dk\aau\cs\redirect\R$drawable.class
 dk\aau\cs\redirect\R$string.class
 dk\aau\cs\redirect\R.class
 dk\aau\cs\redirect\BuildConfig.class
+dk\aau\cs\redirect\Manifest.class
+dk\aau\cs\redirect\redirect.class
+dk\aau\cs\redirect\R$layout.class
+dk\aau\cs\redirect\R$drawable.class
