@@ -56,9 +56,7 @@
 
 
 
-	**************************
-	****** Tests import ******
-	**************************ble code coverage -->
+<!-- enable code coverage -->
 <target name="emma">
 <property name="emma.enabled" value="true" />
 </target>
