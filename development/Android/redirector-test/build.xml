@@ -84,7 +84,8 @@
     <!-- ************ Test project specific targets ************ -->
     <!-- ******************************************************* -->
 
-	<!-- enable code coverage -->
+
+    <!-- enble code coverage -->
     <target name="emma">
         <property name="emma.enabled" value="true" />
     </target>
@@ -128,8 +129,7 @@
 
                 </then>
             </if>
-
-        </then>
+	</then>
         <else>
             <!-- this is a test app, the tested package is the app's own package -->
             <property name="tested.project.app.package" value="${project.app.package}" />
@@ -145,7 +145,11 @@
 
                 </then>
             </if>
-	<property name="emma.dump.file"
+
+        </else>
+        </if>
+
+        <property name="emma.dump.file"
                 value="/data/data/${tested.project.app.package}/coverage.ec" />
 
         <if condition="${emma.enabled}">
@@ -227,8 +231,7 @@
 
 
 
-
-    <import file="custom_rules.xml" optional="true"/>
+import file="custom_rules.xml" optional="true"/>
 
     <!-- Import the actual build file.
 
