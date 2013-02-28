@@ -231,7 +231,7 @@
 
 
 
-import file="custom_rules.xml" optional="true"/>
+<import file="custom_rules.xml" optional="true"/>
 
     <!-- Import the actual build file.
 
