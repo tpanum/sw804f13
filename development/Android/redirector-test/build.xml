@@ -150,7 +150,7 @@
         </if>
 
         <property name="emma.dump.file"
-                value="/data/data/${tested.project.app.package}/coverage.ec" />
+                value="/sdcard/coverage.ec" />
 
         <if condition="${emma.enabled}">
             <then>
