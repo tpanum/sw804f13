@@ -84,7 +84,7 @@
     <!-- ************ Test project specific targets ************ -->
     <!-- ******************************************************* -->
 
-    <!-- enable code coverage -->
+	<!-- enable code coverage -->
     <target name="emma">
         <property name="emma.enabled" value="true" />
     </target>
@@ -145,16 +145,12 @@
 
                 </then>
             </if>
-	
-	</else>
-        </if>
-
-        <property name="emma.dump.file"
-                value="/sdcard/coverage.ec" />
+	<property name="emma.dump.file"
+                value="/data/data/${tested.project.app.package}/coverage.ec" />
 
         <if condition="${emma.enabled}">
             <then>
-                <echo>WARNING: Code Coverage is currently only supported on the emulator and rooted devices.</echo>
+                <echo>Running tests...</echo>
                 <run-tests-helper emma.enabled="true">
                     <extra-instrument-args>
                         <arg value="-e" />
@@ -162,6 +158,17 @@
                            <arg value="${emma.dump.file}" />
                     </extra-instrument-args>
                 </run-tests-helper>
+
+                <echo level="info">Setting permission to download the coverage file...</echo>
+                <exec executable="${adb}" failonerror="true">
+                    <arg line="${adb.device.arg}" />
+                    <arg value="shell" />
+                    <arg value="run-as" />
+                    <arg value="${tested.project.app.package}" />
+                    <arg value="chmod" />
+                    <arg value="644" />
+                    <arg value="${emma.dump.file}" />
+                </exec>
                 <echo level="info">Downloading coverage file into project directory...</echo>
                 <exec executable="${adb}" failonerror="true">
                     <arg line="${adb.device.arg}" />
@@ -169,7 +176,6 @@
                     <arg value="${emma.dump.file}" />
                     <arg path="${out.absolute.dir}/coverage.ec" />
                 </exec>
-                <echo level="info">Extracting coverage report...</echo>
 
                 <pathconvert property="tested.project.lib.source.path.value" refid="tested.project.lib.source.path">
                     <firstmatchmapper>
@@ -177,35 +183,39 @@
                         <identitymapper/>
                     </firstmatchmapper>
                 </pathconvert>
-
-
+		<echo level="info">Extracting coverage report...</echo>
                 <emma>
+                    <property name="report.html.out.encoding" value="UTF-8" />
                     <report sourcepath="${tested.project.source.absolute.dir}:${tested.project.lib.source.path.value}"
                             verbosity="${verbosity}">
                         <!-- TODO: report.dir or something like should be introduced if necessary -->
                         <infileset file="${out.absolute.dir}/coverage.ec" />
                         <infileset file="${tested.project.out.absolute.dir}/coverage.em" />
                         <!-- TODO: reports in other, indicated by user formats -->
-			
-
-			<!-- Changes was made here -->
-
-			<html outfile="${out.absolute.dir}/coverage.html" />
-			<xml outfile="${out.absolute.dir}/coverage/coverage.xml" />
-
-
+                        <html outfile="${out.absolute.dir}/coverage.html" />
+                        <txt outfile="${out.absolute.dir}/coverage.txt" />
+                        <xml outfile="${out.absolute.dir}/coverage.xml" />
                    </report>
                 </emma>
                 <echo level="info">Cleaning up temporary files...</echo>
                 <delete file="${out.absolute.dir}/coverage.ec" />
-                <delete file="${out.absolute.dir}/coverage.em" />
-                <echo level="info">Saving the report file in ${out.absolute.dir}/coverage.html and ${out.absolute.dir}/coverage/coverage.xml</echo>
+                <delete file="${tested.project.out.absolute.dir}/coverage.em" />
+                <exec executable="${adb}" failonerror="true">
+                    <arg line="${adb.device.arg}" />
+                    <arg value="shell" />
+                    <arg value="run-as" />
+                    <arg value="${tested.project.app.package}" />
+                    <arg value="rm" />
+                    <arg value="${emma.dump.file}" />
+                </exec>
+                <echo level="info">Saving the coverage reports in ${out.absolute.dir}</echo>
             </then>
             <else>
                 <run-tests-helper />
             </else>
         </if>
     </target>
+
 
 
 
