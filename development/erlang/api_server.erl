@@ -1,6 +1,8 @@
--module(json_echo).
+-module(api_server).
 
 -export([listen/1]).
+
+-compile([debug_info, export_all]).
 
 -define(TCP_OPTIONS, [binary, {packet, 0}, {active, false}, {reuseaddr, true}]).
 
@@ -24,4 +26,16 @@ loop(Socket) ->
             loop(Socket);
         {error, closed} ->
             ok
+    end.
+
+decodeData(Data) ->
+    {ok, {L}} = json:decode(Data),
+    {_,V} = lists:keyfind(<<"action">>, 1, L),
+    findCommand(V).
+
+
+findCommand(Command) ->
+    case Command of
+        <<"redirect">> ->
+            <<"Received action Redirect">>
     end.
