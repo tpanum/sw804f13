@@ -70,20 +70,6 @@
 
 
 
-    <taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask"/>
-
-	<target name="findbugs">
-	<mkdir dir="reports" />
-	<findbugs home="${findbugs.home}" output="xml" outputFile="reports/findbugs.xml">
-		<auxClasspath path="${android.jar}" />
-		<class location="${out.dir}" />
-	</findbugs>
-    </target>
-
-
-
-
-
 
     <import file="custom_rules.xml" optional="true"/>
 
@@ -105,7 +91,7 @@
          In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
          in order to avoid having your file be overridden by tools such as "android update project"
     -->
-    <!-- version-tag: custom -->
+    <!-- version-tag: 1 -->
     <import file="${sdk.dir}/tools/ant/build.xml"/>
 
 </project>
