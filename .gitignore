@@ -94,3 +94,14 @@ profile
 DerivedData
 #.idea/
 *.hmap
+
+##########
+# Erlang #
+##########
+
+.eunit
+deps
+*.o
+*.beam
+*.plt
+erl_crash.dump
