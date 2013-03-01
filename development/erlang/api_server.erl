@@ -19,23 +19,73 @@ accept(LSocket) ->
 
 % Echo back whatever data we receive on Socket.
 loop(Socket) ->
-    case gen_tcp:recv(Socket, 0) of
-        {ok, Data} ->
-            io:format("recv'd ~p", [Data]),
-            gen_tcp:send(Socket, Data),
-            loop(Socket);
-        {error, closed} ->
-            ok
+    gen_tcp:send(Socket, <<"Hello">>),
+    ok = gen_tcp:close(Socket).
+    % case gen_tcp:recv(Socket, 0) of
+    %     {ok, Data} ->
+    %         io:format("recv'd ~p", [Data]),
+    %         gen_tcp:send(Socket, Data),
+    %         loop(Socket);
+    %     {error, closed} ->
+    %         ok
+    % end.
+
+handleData(Data) ->
+    {ok, {D}} = json:decode(Data),
+    Status = handleAuthentication(D),
+    case Status of
+        {ok, ID} ->
+            ID,
+            handleCommand(D);
+        {error, _} ->
+            error
     end.
 
-decodeData(Data) ->
-    {ok, {L}} = json:decode(Data),
-    {_,V} = lists:keyfind(<<"action">>, 1, L),
-    findCommand(V).
+handleAuthentication(D) ->
+    Auth = findAuthentication(D),
+    authenticate(Auth).
 
+handleCommand(D) ->
+    Command = findCommand(D),
+    Parameters = findParameters(D),
+    performCommand(Command, Parameters).
 
-findCommand(Command) ->
-    case Command of
-        <<"redirect">> ->
-            <<"Received action Redirect">>
+findAttribute(List, Attribute) ->
+    KeyValue = lists:keyfind(Attribute, 1, List),
+
+    case KeyValue of
+        {Attribute, Result} ->
+            Result;
+        false ->
+            false
     end.
+
+findCommand(List) ->
+    findAttribute(List, <<"command">>).
+
+performCommand(Command, Parameters) ->
+    % case Command of
+    %     <<"redirect">> ->
+    %         <<"Received action Redirect">>
+    % end.
+    ok.
+
+findParameters(List) ->
+    findAttribute(List, <<"params">>).
+
+findAuthentication(List) ->
+    findAttribute(List, <<"auth">>).
+
+authenticate(Authentication) ->
+    case Authentication of
+        <<"abcd">> ->
+            {ok, 1};
+        _ ->
+            error
+    end.
+
+
+
+
+
+
