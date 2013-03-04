@@ -1,7 +1,7 @@
 <mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1025" measuredH="517" mockupW="908" mockupH="510">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="117" y="7" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
-    <control controlID="1" controlTypeID="com.balsamiq.mockups::DataGrid" x="148" y="162" w="217" h="271" measuredW="215" measuredH="149" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::DataGrid" x="148" y="162" w="217" h="271" measuredW="231" measuredH="149" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <align>left</align>
         <borderStyle>none</borderStyle>
@@ -83,7 +83,7 @@
     </control>
     <control controlID="22" controlTypeID="com.balsamiq.mockups::iPhone" x="432" y="7" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="16" locked="false" isInGroup="-1"/>
     <control controlID="23" controlTypeID="com.balsamiq.mockups::iPhone" x="743" y="7" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="17" locked="false" isInGroup="-1"/>
-    <control controlID="24" controlTypeID="com.balsamiq.mockups::DataGrid" x="459" y="164" w="223" h="271" measuredW="215" measuredH="149" zOrder="18" locked="false" isInGroup="-1">
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::DataGrid" x="459" y="164" w="223" h="271" measuredW="231" measuredH="149" zOrder="18" locked="false" isInGroup="-1">
       <controlProperties>
         <align>left</align>
         <borderStyle>none</borderStyle>
@@ -163,7 +163,7 @@
         <icon>TelephoneIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::Tooltip" x="465" y="132" w="215" h="128" measuredW="122" measuredH="241" zOrder="33" locked="false" isInGroup="-1">
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Tooltip" x="465" y="132" w="215" h="128" measuredW="133" measuredH="0" zOrder="33" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
         <tooltipDirection>NE</tooltipDirection>
@@ -225,79 +225,74 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="780" y="401" w="-1" h="-1" measuredW="101" measuredH="21" zOrder="44" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Save%20to%20contacts</text>
-      </controlProperties>
-    </control>
-    <control controlID="61" controlTypeID="com.balsamiq.mockups::Icon" x="896" y="399" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="45" locked="false" isInGroup="-1">
-      <controlProperties>
-        <icon>CheckMarkIcon%7Csmall</icon>
-      </controlProperties>
-    </control>
-    <control controlID="62" controlTypeID="com.balsamiq.mockups::Icon" x="941" y="399" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="46" locked="false" isInGroup="-1">
-      <controlProperties>
-        <icon>CircledXIcon%7Csmall</icon>
-      </controlProperties>
-    </control>
-    <control controlID="63" controlTypeID="com.balsamiq.mockups::Icon" x="478" y="260" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="47" locked="false" isInGroup="-1">
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Icon" x="478" y="260" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="44" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>PhoneHangUpIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::Icon" x="478" y="276" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="48" locked="false" isInGroup="-1">
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Icon" x="478" y="276" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="45" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>CheckMarkIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="65" controlTypeID="com.balsamiq.mockups::Icon" x="478" y="292" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="49" locked="false" isInGroup="-1">
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Icon" x="478" y="292" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="46" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>CircledXIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="260" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="50" locked="false" isInGroup="-1">
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="260" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="47" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>UndoIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="67" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="276" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="51" locked="false" isInGroup="-1">
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="276" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="48" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>UndoIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="68" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="292" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="52" locked="false" isInGroup="-1">
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Icon" x="636" y="292" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="49" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>UndoIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="69" controlTypeID="com.balsamiq.mockups::Icon" x="163" y="260" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="53" locked="false" isInGroup="-1">
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Icon" x="163" y="260" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="50" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>PhoneHangUpIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="70" controlTypeID="com.balsamiq.mockups::Icon" x="163" y="276" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="54" locked="false" isInGroup="-1">
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::Icon" x="163" y="276" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="51" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>CheckMarkIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="71" controlTypeID="com.balsamiq.mockups::Icon" x="163" y="292" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="55" locked="false" isInGroup="-1">
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Icon" x="163" y="292" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="52" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>CircledXIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="72" controlTypeID="com.balsamiq.mockups::Icon" x="319" y="260" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="56" locked="false" isInGroup="-1">
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::Icon" x="319" y="260" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="53" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>UndoIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="73" controlTypeID="com.balsamiq.mockups::Icon" x="319" y="276" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="57" locked="false" isInGroup="-1">
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Icon" x="319" y="276" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="54" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>UndoIcon%7Cxsmall</icon>
       </controlProperties>
     </control>
-    <control controlID="74" controlTypeID="com.balsamiq.mockups::Icon" x="319" y="292" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="58" locked="false" isInGroup="-1">
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::Icon" x="319" y="292" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="55" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>UndoIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::Button" x="772" y="406" w="121" h="27" measuredW="64" measuredH="27" zOrder="56" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::Button" x="883" y="406" w="118" h="27" measuredW="52" measuredH="27" zOrder="57" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Save</text>
       </controlProperties>
     </control>
   </controls>
