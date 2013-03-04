@@ -19,16 +19,16 @@ accept(LSocket) ->
 
 % Echo back whatever data we receive on Socket.
 loop(Socket) ->
-    gen_tcp:send(Socket, <<"Hello">>),
-    ok = gen_tcp:close(Socket).
-    % case gen_tcp:recv(Socket, 0) of
-    %     {ok, Data} ->
-    %         io:format("recv'd ~p", [Data]),
-    %         gen_tcp:send(Socket, Data),
-    %         loop(Socket);
-    %     {error, closed} ->
-    %         ok
-    % end.
+    % gen_tcp:send(Socket, <<"Hello">>),
+    % ok = gen_tcp:close(Socket).
+    case gen_tcp:recv(Socket, 0) of
+        {ok, Data} ->
+            io:format("recv'd package~n"),
+            gen_tcp:send(Socket, Data),
+            loop(Socket);
+        {error, closed} ->
+            ok
+    end.
 
 handleData(Data) ->
     {ok, {D}} = json:decode(Data),

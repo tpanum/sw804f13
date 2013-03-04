@@ -3,8 +3,8 @@
 -compile([debug_info, export_all]).
 
 init(Data) ->
-	case json:decode(Data) of
-		{ok, {D}} ->
+	case mochijson2:decode(Data) of
+		{struct, D} ->
 			D;
 		{error,_} -> {error, <<"Message not of JSON format">>}
 	end.
@@ -38,3 +38,38 @@ determine_command({<<"command">>, Name}) ->
 	end;
 determine_command({_,_}) ->
 	error.
+
+validate_parameters(redirect, Message) ->
+	{_, Params} = lists:keyfind(<<"params">>, 1, Message),
+	{_, Num} = lists:keyfind(<<"num">>, 1, Params),
+	{ok, [{num, Num}]};
+validate_parameters(update_status, Message) ->
+	{_, Params} = lists:keyfind(<<"params">>, 1, Message),
+	{_, Status} = lists:keyfind(<<"status">>, 1, Params),
+	{ok, [{status, Status}]};
+validate_parameters(fetch_contacts, Message) ->
+	{_, _} = lists:keyfind(<<"params">>, 1, Message),
+	{ok, []};
+% validate_parameters(create_contact, Message) ->
+% 	TO BE IMPLEMENTED;
+validate_parameters(login, Message) ->
+	{_, Params} = lists:keyfind(<<"params">>, 1, Message),
+	{_, Username} = lists:keyfind(<<"username">>, 1, Params),
+	{_, Password} = lists:keyfind(<<"password">>, 1, Params),
+	{ok, [{username, Username}, {password, Password}]}.
+
+api(redirect, Params) ->
+	api_redirect(Params);
+api(update_status, Params) ->
+	api_fetch_contacts(Params).
+
+api_redirect(Params) ->
+	% IMPLEMENT CONNECTION TO CALL MANAGER
+	[{num, Num}] = Params,
+	{ok, {data, [{<<"num">>, Num}]}}.
+
+api_fetch_contacts(Params) ->
+	ok.
+
+
+
