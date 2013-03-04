@@ -68,3 +68,7 @@ api_redirect_test() ->
     ?assertEqual({ok, {data, [{<<"num">>,<<"213412332">>}]}}, message:api_redirect(RedirectParams)),
     ?assertException(error, _, message:api_redirect(WrongRedirectParams)).
 
+form_response_test() ->
+    Message = [{<<"command">>, <<"redirect">>}, {<<"params">>, [{<<"trololo">>, <<"dsajjdsaoi">>}, {<<"num">>, <<"42135642">>}]}, {<<"auth">>, <<"some_key">>}, {<<"timestamp">>, <<"2002-02-02">>}],
+    Data = [{<<"num">>,213412332}],
+    ?assertEqual(<<"{\"command\":\"redirect\",\"status\":{\"type\":\"test\",\"message\":[]},\"data\":{\"num\":213412332},\"recv_timestamp\":\"2002-02-02\"}">>, message:form_response(Message, Data)).

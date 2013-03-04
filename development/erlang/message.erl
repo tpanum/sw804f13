@@ -71,5 +71,18 @@ api_redirect(Params) ->
 api_fetch_contacts(Params) ->
 	ok.
 
+form_response(Message, Data) ->
+	Command = lists:keyfind(<<"command">>, 1, Message),
+	{_,Timestamp} = lists:keyfind(<<"timestamp">>, 1, Message),
+	TimeTuble = {<<"recv_timestamp">>, Timestamp},
+	Status = {<<"status">>, [{<<"type">>,<<"test">>},{<<"message">>,[]}]},
+	DataTuble = {<<"data">>, Data},
+
+	Response = [Command, Status, DataTuble, TimeTuble],
+	list_to_binary(mochijson2:encode(Response)).
+
+
+
+
 
 
