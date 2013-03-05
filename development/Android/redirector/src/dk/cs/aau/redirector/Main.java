@@ -3,7 +3,7 @@ package dk.cs.aau.redirector;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class redirector extends Activity {
+public class Main extends Activity {
     /**
      * Called when the activity is first created.
      */

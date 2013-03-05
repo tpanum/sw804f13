@@ -1,9 +1,7 @@
 package dk.cs.aau.redirector;
 
 import android.test.ActivityInstrumentationTestCase2;
-import org.junit.Test;
 import org.junit.Assert;
-import static org.hamcrest.CoreMatchers.equalTo;
 
 
 /**
@@ -13,18 +11,18 @@ import static org.hamcrest.CoreMatchers.equalTo;
  * <p/>
  * To run this test, you can type:
  * adb shell am instrument -w \
- * -e class dk.aau.cs.redirector.redirectorTest \
- * dk.aau.cs.redirector.tests/android.test.InstrumentationTestRunner
+ * -e class dk.aau.cs.Main.mainTest \
+ * dk.aau.cs.Main.tests/android.test.InstrumentationTestRunner
  */
-public class redirectorTest extends ActivityInstrumentationTestCase2<redirector> {
+public class mainTest extends ActivityInstrumentationTestCase2<Main> {
 
-    public redirectorTest() {
-        super("dk.aau.cs.redirector", redirector.class);
+    public mainTest() {
+        super("dk.aau.cs.Main", Main.class);
 
     }
 
     public void testAppname(){
-        //String appName = new redirector().getResources().getString(R.string.app_name);
+        //String appName = new Main().getResources().getString(R.string.app_name);
         Assert.assertEquals(1,1);
     }
 

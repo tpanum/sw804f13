@@ -26,8 +26,8 @@
     </Class>
   </BugInstance>
   <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" abbrev="Nm" category="BAD_PRACTICE">
-    <Class classname="dk.cs.aau.redirector.redirector">
-      <SourceLine classname="dk.cs.aau.redirector.redirector" start="6" end="14" sourcefile="redirector.java" sourcepath="dk/cs/aau/redirector/redirector.java"/>
+    <Class classname="dk.cs.aau.redirector.Main">
+      <SourceLine classname="dk.cs.aau.redirector.Main" start="6" end="14" sourcefile="redirector.java" sourcepath="dk/cs/aau/redirector/redirector.java"/>
     </Class>
   </BugInstance>
   <Errors errors="1" missingClasses="1">
@@ -53,7 +53,7 @@
       <ClassStats class="dk.cs.aau.redirector.R$drawable" sourceFile="R.java" interface="false" size="4" bugs="1" priority_2="1"/>
       <ClassStats class="dk.cs.aau.redirector.R$layout" sourceFile="R.java" interface="false" size="4" bugs="1" priority_2="1"/>
       <ClassStats class="dk.cs.aau.redirector.R$string" sourceFile="R.java" interface="false" size="4" bugs="1" priority_2="1"/>
-      <ClassStats class="dk.cs.aau.redirector.redirector" sourceFile="redirector.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="dk.cs.aau.redirector.Main" sourceFile="redirector.java" interface="false" size="7" bugs="1" priority_2="1"/>
     </PackageStats>
     <FindBugsProfile>
       <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="675" invocations="294" avgMicrosecondsPerInvocation="2296" maxMicrosecondsPerInvocation="41109" standardDeviationMircosecondsPerInvocation="4828"/>
