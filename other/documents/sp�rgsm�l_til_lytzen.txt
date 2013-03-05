@@ -1,0 +1,4 @@
+Spørgsmål til Lytzen:
+
+	- Hvordan håndterer CISCO call manager forkerte landekoder på telefonnumre
+	

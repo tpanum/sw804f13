@@ -12,8 +12,8 @@
     </application>
     <!--
     This declares that this application uses the instrumentation test runner targeting
-    the package of dk.cs.aau.redirector.  To run the tests use the command:
-    "adb shell am instrument -w dk.cs.aau.redirector.tests/android.test.InstrumentationTestRunner"
+    the package of dk.cs.aau.Main.  To run the tests use the command:
+    "adb shell am instrument -w dk.cs.aau.Main.tests/android.test.InstrumentationTestRunner"
     -->
     <instrumentation android:name="android.test.InstrumentationTestRunner"
                      android:targetPackage="dk.cs.aau.redirector"

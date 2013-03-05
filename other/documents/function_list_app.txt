@@ -1,0 +1,53 @@
+Function names are not final
+
+Tools
+	- Large methods:
+		- redirectCall
+		- getContactStatus
+		- updateStatus
+	- Small methods:
+		- genAuthorization
+		- sendRequest
+		- genJSON
+		- updateContacts
+	- 	
+
+pseudo
+
+	- redirectCall
+		- Invoked by onClickListener
+		- genAuthorization() - Function
+		- Read number to reditrect to from list object - Statement
+		- sendRequest() - Function
+			- rec: bool - true for succes, false for fail.
+				- if true close call
+				- if false fault handling
+
+	- getContactStatus
+		- genAuthorization() - Function
+		- While sendRequest returns false
+			- sendRequest() - Function
+				- rec: bool - true for succes, false for fail.
+					- if true update contacts
+
+	- updateStatus
+		- OnclickListener
+		- genAuthorization() - Function
+		- While sendRequest returns false
+			- sendRequest() - Function
+				- rec: bool - true for succes, false for fail.
+					- if true update visual
+
+
+	- genAuthorization - param: user_name, pw
+		- openSSL call on user info
+		- return String: encrypted user info
+
+	- sendRequest - param: encrypted authoriztion, request type
+		- genJSON() - Function
+		- Open socket, send request.
+
+	- updateContactStattus - param: String - JSON - contact information
+		-  
+
+
