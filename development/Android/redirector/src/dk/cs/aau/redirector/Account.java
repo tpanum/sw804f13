@@ -15,7 +15,7 @@ public class Account extends Person {
     private String password;
     public static SharedPreferences login;
 
-    public boolean authenticate(){
+    public boolean authenticate() {
 
 
         return true;

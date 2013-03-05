@@ -11,22 +11,22 @@ import org.junit.Assert;
  */
 public class Communicator {
 
-    public static boolean redirectCall(String num){
+    public static boolean redirectCall(String num) {
 
         return true;
     }
 
-    public static boolean getContactStatus(){
+    public static boolean getContactStatus() {
 
         return true;
     }
 
-    public static boolean updateStatus(int i){
+    public static boolean updateStatus(int i) {
 
         return true;
     }
 
-    public static String genAuthorization(){
+    public static String genAuthorization() {
 
         return "hej";
     }
@@ -38,17 +38,17 @@ public class Communicator {
     *
     * @type - accepted input: login, redirect, status. contactstatus. addcontact. updatecontact. deletecontact
      */
-    public static boolean sendRequest(String auth, String type){
+    public static boolean sendRequest(String auth, String type) {
 
         return true;
     }
 
-    public static String genJSON(String auth, String cmd){
+    public static String genJSON(String auth, String cmd) {
 
         return "";
     }
 
-    public static boolean updateContactStatus(String JSON){
+    public static boolean updateContactStatus(String JSON) {
 
         return true;
     }
