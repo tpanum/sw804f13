@@ -19,73 +19,10 @@ accept(LSocket) ->
 
 % Echo back whatever data we receive on Socket.
 loop(Socket) ->
-    % gen_tcp:send(Socket, <<"Hello">>),
-    % ok = gen_tcp:close(Socket).
     case gen_tcp:recv(Socket, 0) of
         {ok, Data} ->
-            io:format("recv'd package~n"),
-            gen_tcp:send(Socket, Data),
+            gen_tcp:send(Socket, message:generate_response(Data)),
             loop(Socket);
         {error, closed} ->
             ok
     end.
-
-handleData(Data) ->
-    {ok, {D}} = json:decode(Data),
-    Status = handleAuthentication(D),
-    case Status of
-        {ok, ID} ->
-            ID,
-            handleCommand(D);
-        {error, _} ->
-            error
-    end.
-
-handleAuthentication(D) ->
-    Auth = findAuthentication(D),
-    authenticate(Auth).
-
-handleCommand(D) ->
-    Command = findCommand(D),
-    Parameters = findParameters(D),
-    performCommand(Command, Parameters).
-
-findAttribute(List, Attribute) ->
-    KeyValue = lists:keyfind(Attribute, 1, List),
-
-    case KeyValue of
-        {Attribute, Result} ->
-            Result;
-        false ->
-            false
-    end.
-
-findCommand(List) ->
-    findAttribute(List, <<"command">>).
-
-performCommand(Command, Parameters) ->
-    % case Command of
-    %     <<"redirect">> ->
-    %         <<"Received action Redirect">>
-    % end.
-    ok.
-
-findParameters(List) ->
-    findAttribute(List, <<"params">>).
-
-findAuthentication(List) ->
-    findAttribute(List, <<"auth">>).
-
-authenticate(Authentication) ->
-    case Authentication of
-        <<"abcd">> ->
-            {ok, 1};
-        _ ->
-            error
-    end.
-
-
-
-
-
-
