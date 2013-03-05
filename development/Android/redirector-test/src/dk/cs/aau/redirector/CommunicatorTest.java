@@ -2,6 +2,7 @@ package dk.cs.aau.redirector;
 
 import org.junit.Test;
 import org.junit.Assert;
+import dk.cs.aau.redirector.*;
 
 import static org.hamcrest.CoreMatchers.*;
 
