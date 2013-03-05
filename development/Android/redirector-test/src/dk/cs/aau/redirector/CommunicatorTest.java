@@ -21,6 +21,8 @@ public class CommunicatorTest {
         Assert.assertFalse(Communicator.redirectCall(null));
         Assert.assertFalse(Communicator.redirectCall(""));
         Assert.assertFalse(Communicator.redirectCall("999999999999999999"));
+        Assert.assertFalse(Communicator.redirectCall("sdsds9"));
+        Assert.assertFalse(Communicator.redirectCall("hej"));
         Assert.assertTrue(Communicator.redirectCall("+4528705550"));
 
     }

@@ -9,5 +9,29 @@ package dk.cs.aau.redirector;
  */
 public class Contacts extends Person {
 
-    public static String nick_name;
+    public String nick;
+
+   public Contacts(int id, String name, int status, String num, String nick){
+       this.id = id;
+       this.name = name;
+       this.status = status;
+       this.number = num;
+       this.nick = nick;
+   }
+
+    public boolean create(){
+
+        return true;
+    }
+
+    public boolean update(){
+
+        return true;
+
+    }
+
+    public boolean delete(){
+
+        return true;
+    }
 }
