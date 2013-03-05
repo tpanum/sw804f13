@@ -1,5 +1,7 @@
 package dk.cs.aau.redirector;
 
+import org.junit.Assert;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Esben
@@ -29,12 +31,19 @@ public class Communicator {
         return "hej";
     }
 
-    public static boolean sendRequest(){
+    /*
+    *
+    *
+    *
+    *
+    * @type - accepted input: login, redirect, status. contactstatus. addcontact. updatecontact. deletecontact
+     */
+    public static boolean sendRequest(String auth, String type){
 
         return true;
     }
 
-    public static String genJSON(String auth, int cmd){
+    public static String genJSON(String auth, String cmd){
 
         return "";
     }
