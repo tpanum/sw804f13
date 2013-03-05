@@ -71,9 +71,6 @@ proguard/
 workspace.xml
 tasks.xml
 
-#Robolectric test files
-cached-robolectric-classes.jar
-
 #######
 # iOS #
 #######
