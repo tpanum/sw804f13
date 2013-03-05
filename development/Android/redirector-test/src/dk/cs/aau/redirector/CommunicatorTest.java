@@ -1,5 +1,6 @@
 package dk.cs.aau.redirector;
 
+import android.test.ActivityInstrumentationTestCase2;
 import org.junit.Test;
 import org.junit.Assert;
 
