@@ -1,6 +1,8 @@
 package dk.cs.aau.redirector;
 
+import android.content.Context;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,10 +15,18 @@ public class Account extends Person {
 
     private String username;
     private String password;
-    public static SharedPreferences login;
+    //private Context context;
+    //public static SharedPreferences preferences;
+
+    public Account(String username, String password) {
+        this.username = username;
+        this.password = password;
+        //this.context = context;
+        //this.preferences = PreferenceManager.getDefaultSharedPreferences(context);
+    }
 
     public boolean authenticate() {
-
+        //uses sendRequest
 
         return true;
     }

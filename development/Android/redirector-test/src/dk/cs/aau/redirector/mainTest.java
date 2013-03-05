@@ -23,7 +23,7 @@ public class mainTest extends ActivityInstrumentationTestCase2<Main> {
 
     public void testAppname() {
         //String appName = new Main().getResources().getString(R.string.app_name);
-        Assert.assertEquals(1, 1);
+        assertEquals(1, 1);
     }
 
 }
