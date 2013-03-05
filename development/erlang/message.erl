@@ -48,6 +48,8 @@ destruct({K, V}) ->
 destruct(Term) ->
     Term.
 
+% Validate the format of the JSON
+
 validate_format(M) ->
 	validate_format(M, [], []).
 
@@ -66,6 +68,8 @@ validate_format(Message, RequiredAttributes, Result) ->
 		false -> erlang:error({missing_attribute, Target})
 	end.
 
+% Determine which command to use
+
 determine_command(Message = [{<<"command">>,_}|_]) ->
 	determine_command(lists:keyfind(<<"command">>, 1, Message));
 
@@ -80,6 +84,8 @@ determine_command({<<"command">>, Name}) ->
 	end;
 determine_command(_) ->
 	erlang:error(badarg).
+
+% Validate parameters
 
 validate_parameters(Command, Message = [{<<"command">>,_}|_]) ->
 	% GENERAL CASE
@@ -109,6 +115,7 @@ find_parameter(Param, ListOfParams) ->
 			erlang:error({missing_parameter, Param})
 	end.
 
+% Call specific functions for each command
 api(redirect, Params) ->
 	api_redirect(Params);
 api(update_status, Params) ->
@@ -130,6 +137,7 @@ api_login(Params) ->
 	% IMPLEMENT stuff about login
 	{ok, {data, [{<<"username">>, Username}, {<<"auth">>, <<"DbsjhfasJJNN23">>}]}}.
 
+% Form the responses
 form_response({error, _, ErrorMessage}) ->
 	Status = {<<"status">>, [{<<"type">>,<<"error">>}, {<<"message">>,[ErrorMessage]}]},
 
