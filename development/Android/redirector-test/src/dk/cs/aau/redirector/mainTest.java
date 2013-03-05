@@ -21,9 +21,9 @@ public class mainTest extends ActivityInstrumentationTestCase2<Main> {
 
     }
 
-    public void testAppname(){
+    public void testAppname() {
         //String appName = new Main().getResources().getString(R.string.app_name);
-        Assert.assertEquals(1,1);
+        Assert.assertEquals(1, 1);
     }
 
 }

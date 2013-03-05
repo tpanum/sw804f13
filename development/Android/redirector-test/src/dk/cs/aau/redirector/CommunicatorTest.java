@@ -3,6 +3,7 @@ package dk.cs.aau.redirector;
 import android.test.ActivityInstrumentationTestCase2;
 import org.junit.Test;
 import org.junit.Assert;
+import dk.cs.aau.redirector.*;
 
 import static org.hamcrest.CoreMatchers.*;
 
@@ -66,7 +67,6 @@ public class CommunicatorTest {
         Assert.assertFalse(Communicator.sendRequest("JSON STRING", "ledfsdfsddfvs"));
 
 
-
     }
 
     @Test
@@ -75,12 +75,12 @@ public class CommunicatorTest {
         String auth = Communicator.genAuthorization();
 
         Assert.assertEquals("JSON STRING", Communicator.genJSON(auth, "login"));
-        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth,"redirect"));
-        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth,"status"));
-        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth,"contactstatus"));
-        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth,"addcontact"));
-        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth,"updatecontact"));
-        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth,"deletecontact"));
+        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth, "redirect"));
+        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth, "status"));
+        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth, "contactstatus"));
+        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth, "addcontact"));
+        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth, "updatecontact"));
+        Assert.assertEquals("JSON STRING", Communicator.genJSON(auth, "deletecontact"));
 
         Assert.assertThat("JSON STRING", is(not(Communicator.genJSON(auth, "fgdsdfsd"))));
         Assert.assertThat("JSON STRING", is(not(Communicator.genJSON("edfdfsdfsdfsdWEFWE", "login"))));
